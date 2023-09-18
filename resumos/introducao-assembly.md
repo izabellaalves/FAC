@@ -19,6 +19,13 @@ Algumas instruções comuns em assembly MIPS são:
 - Store: movimentação de dados do registrador para a memória.
 - Move: movimentação de dados de um registrador para outro registrador.
 
-## Comandos LI (Load Immediate)
+## Comandos li $v0
 
 ** colocar imgs
+
+## Tipos de dados
+
+- .ascizz: cadeia de caracteres (Obs.: para trasnferir o conteudo da variavel pro registrador usa-se LI)
+- .ascii: caractere (Obs.: para trasnferir o conteudo da variavel pro registrador usa-se LI)
+- .word: inteiros (Obs.: para trasnferir o conteudo da variavel pro registrador usa-se LW, mas se o valor nao vier da memoria usa-se LI tmb)
+
