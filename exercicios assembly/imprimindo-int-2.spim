@@ -1,0 +1,5 @@
+.text
+    main:
+        li $v0, 1       # Código da syscall para imprimir inteiro
+        li $a0, 2756    # Carrega o valor 2756 em $a0
+        syscall

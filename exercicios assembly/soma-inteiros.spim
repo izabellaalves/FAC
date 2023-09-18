@@ -1,0 +1,20 @@
+# add resultado, reg1, reg2
+# addi resultado, reg1, int
+
+# SOMANDO 75+25
+.text
+    main:
+        # USANDO ADD
+        li $s0, 75
+        li $s1, 25
+        add $t0, $s0, $s1
+
+        li $v0, 1
+        move $a0, $t0
+        syscall
+
+        # USANDO ADDI
+        addi $t0, $s0, 25
+        li $v0, 1
+        move $a0, $t0
+        syscall

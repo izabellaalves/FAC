@@ -1,0 +1,11 @@
+.data
+    caractere: .byte 'I'
+.text
+    main:
+        li $v0, 4 # o numero 4 serve pra char ou strings
+        la $a0, caractere #passo o endereço da variavel q ta na memoria pro registrador $a0 que eh o registrador q imprime as coisas
+        syscall
+
+        li $v0, 10 # 10 serve para encerrar o programa
+        syscall #syscall eh utilizado para fazer uma chamada ao SO para solicitar um serviço
+        

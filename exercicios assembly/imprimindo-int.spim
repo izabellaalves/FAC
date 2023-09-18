@@ -1,0 +1,8 @@
+.data
+    inteiro: .word 123
+
+.text
+    main:
+        li $v0, 1 # numero 1 para inteiros
+        lw $a0, inteiro
+        syscall

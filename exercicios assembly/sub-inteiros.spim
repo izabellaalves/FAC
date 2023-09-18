@@ -1,0 +1,18 @@
+# SUB result, reg1, reg2
+# SUBI result, reg1, int
+
+.text
+    main:
+        #subtraindo 20 - 5
+        li $t0, 20
+        li $t1, 5
+        sub $s0, $t0, $t1
+
+        li $v0, 1
+        move $a0, $s0 #instrução move serve para colocar o conteúdo de um registrador em outro registrador
+        syscall
+
+        #subtraindo 20 - 10 usando addi
+        sub $s0, $t0, 10
+        move $a0, $s0
+        syscall

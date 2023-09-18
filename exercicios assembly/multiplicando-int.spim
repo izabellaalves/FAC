@@ -1,0 +1,16 @@
+#MUL RESULTADO, REG1, REG2
+
+.data
+    numero: .word 2
+
+.text
+    main:
+    lw $t0, numero
+    addi $t1, $zero, 7
+
+    mul $s0, $t0, $t1
+
+    li $v0, 1
+    move $a0, $s0
+    syscall
+
