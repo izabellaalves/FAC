@@ -1,0 +1,8 @@
+#A[12] = h+A[8]
+
+.text
+    main:
+        lw $t0, 32($s2) #reg+const |reg=endereço base | const=deslocamento
+        add $s0, $s1, $t0 
+
+        sw $s0, 48($s2)

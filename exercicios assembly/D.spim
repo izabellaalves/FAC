@@ -1,0 +1,27 @@
+.text
+main:
+    li $v0, 5   #I
+    syscall
+    move $t0, $v0       
+
+    li $v0, 5         #J
+    syscall
+    move $t1, $v0
+
+    li $v0, 5        #N
+    syscall
+    move $t2, $v0
+
+    sll $t1, $t1, 2    #J*4
+
+    add $t1, $s0, $t1    #J*4 + A
+
+    lw $t3, 0($t1)           #A[j] em t3
+
+    add $t3, $t3, $t2      #N+A[j] em t3
+
+    sll $t0, $t0, 2        #i*4
+
+    add $t0, $s0, $t0        #i*4 + A
+
+    sw $t3, 0($t0)          # t3 em t0

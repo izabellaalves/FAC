@@ -1,0 +1,11 @@
+# SLL RESULTADO, NUMERO, NUMERO QUE O DOIS ESTA ELEVADO
+# SLL multiplica o valor do segundo parâmetro por 2 elevado ao valor do terceiro parâmetro
+
+.text
+    main:
+        li $t0, 2
+        sll $s0, $t0, 3
+
+        move $a0, $s0
+        li $v0, 1
+        syscall
