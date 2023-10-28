@@ -503,7 +503,7 @@ n = número de bits do multiplicador.
 
 Vamos multiplicar 2X3. Sendo 2 o multiplicando e 3 o multiplicador.
 
-!(Multiplicação 2x3)[#]
+![Multiplicação 2x3](https://github.com/izabellaalves/FAC/blob/main/imagens/mult2x3.png?raw=true)
 
 
 
